@@ -46,7 +46,7 @@ function AddNewInterview() {
       });
   
       const result = await response.json();
-  
+  console.log(result);
       if (result.success) {
         console.log("Interview saved:", result.data);
         console.log("Interview ID:", result.data._id); // Log the specific _id
